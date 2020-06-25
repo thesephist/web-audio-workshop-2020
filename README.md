@@ -1,6 +1,6 @@
 # Mini Player Workshop 🎹
 
-Let's learn how to make music in the browser with the [Web Audio API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API).
+Let's learn how to make music in the browser with the [Web Audio API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API). You can try this workshop yourself on [**Repl.it**](https://repl.it/~) by visiting [repl.it/@thesephist/web-audio-workshop](https://repl.it/@thesephist/web-audio-workshop#README.md).
 
 ![Screenshot](screenshot.jpg)
 
@@ -61,7 +61,7 @@ oscillator.start();
 oscillator.frequency.setValueAtTime(440, ctx.currentTime);
 ```
 
-If we leave it here, the sound will play forever. If you want to stop the oscillator, yoc can call `.stop()` on it at any time.
+If we leave it here, the sound will play forever. If you want to stop the oscillator, you can call `.stop()` on it at any time.
 
 ```js
 // stop playing after 1 second
@@ -81,7 +81,7 @@ What we've covered so far is what you'll find in [the first example](https://web
 
 Before we move onto writing a sound player that can play melodies and notes, we need to brush up on some lightweight music theory.
 
-The common C-major scale is usually based on the "A" pitch being at 440Hz -- 440 vibrations per second. Most musci uses a type of tuning called ["equal temperament tuning"](https://en.wikipedia.org/wiki/Equal_temperament), which means between the low A and high A (440Hz and 880Hz), the interval is divided into 12 equal parts, into the 12 notes in between.
+The common C-major scale is usually based on the "A" pitch being at 440Hz -- 440 vibrations per second. Most music uses a type of tuning called ["equal temperament tuning"](https://en.wikipedia.org/wiki/Equal_temperament), which means between the low A and high A (440Hz and 880Hz), the interval is divided into 12 equal parts, into the 12 notes in between.
 
 If that went over your head, don't worry. The main takeaway from this bit of theory is that we can calculate the frequencies of the notes in a C major scale for our use in making music:
 
@@ -98,7 +98,7 @@ const NOTES = {
 }
 ```
 
-You'll also find these notes in the [second example](https://repl.it/@thesephist/web-audio-workshop#js/intro.js).
+You'll also find these notes used in the [second example](https://repl.it/@thesephist/web-audio-workshop#js/intro.js).
 
 Now, knowing a little about the Web Audio API and about notes and frequencies, we're ready to write some code to make music!
 
